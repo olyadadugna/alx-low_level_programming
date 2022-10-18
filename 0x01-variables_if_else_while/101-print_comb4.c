@@ -1,4 +1,5 @@
 #include <stdlib.h>
+
 /**
  * main - Prints 3 digits combination of numbers
  *
