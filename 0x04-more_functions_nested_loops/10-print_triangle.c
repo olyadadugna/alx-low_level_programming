@@ -8,9 +8,9 @@ void print_triangle(int size)
 {
 	int j, k, i;
 
-	for (i = size; i >= 0; i--)
+	for (i = size; i >= 1; i--)
 	{
-		for (j = 0; j < i; j++)
+		for (j = 1; j < i; j++)
 		{
 			_putchar(' ');
 		}
