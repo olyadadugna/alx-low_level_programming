@@ -2,23 +2,23 @@
 
 /**
  * print_triangle - print a triangle
- * @i: size of the triangle
+ * @size: size of the triangle
  */
-void print_triangle(int i)
+void print_triangle(int size)
 {
 	int j, k;
 
-	if (i > 0)
+	if (size > 0)
 	{
-		for (j = 1; j <= i; j++)
+		for (j = 1; j <= size; j++)
 		{
-			for (k = i - j; k > 0; k--)
+			for (k = size - j; k > 0; k--)
 				_putchar(' ');
 		
 			for (k = 0; k < j; k--)
 				_putchar('#');
 
-			if (j == i)
+			if (j == size)
 			       continue;
 			
 			_putchar('\n');
