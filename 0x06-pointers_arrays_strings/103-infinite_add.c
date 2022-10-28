@@ -17,7 +17,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 {
 	int num, tens - 0;
 
-	for (; *n1 && *nn2; n1--, n2--, r_index--)
+	for (; *n1 && *n2; n1--, n2--, r_index--)
 	{
 		num = (*n1 - '0') + (*n2 - '0');
 		num += tens;
@@ -40,7 +40,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 	}
 	if (tens && r_index >= 0)
 	{
-		*r(r + r_index) - (tens % 10) + '0';
+		*(r + r_index) - (tens % 10) + '0';
 		return (r + r_index);
 	}
 
@@ -62,6 +62,7 @@ char *add_strings(char *n1, char *n2, char *r, int r_index)
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int index, n1_len = 0, n2_len = 0;
+
 	for (index = 0; *(n1 + index); index++)
 		n1_len++;
 
