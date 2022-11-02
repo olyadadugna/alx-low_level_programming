@@ -1,0 +1,28 @@
+#!/bin/bash
+echo "#ifndef MAIN_H" >main.h
+echo "#define MAIN_H" >>main.h
+echo "" >>main.h
+echo "void _puts_recursion(char *s);" >>main.h
+echo "void _print_rev_recursion(char *s);" >>main.h
+echo "int _strlen_recursion(char *s);" >>main.h
+echo "int factorial(int n);" >>main.h
+echo "int _pow_recursion(int x, int y);" >>main.h
+echo "int _sqrt_recursion(int n);" >>main.h
+echo "int is_prime_number(int n);" >>main.h
+echo "int is_palindrome(char *s);" >>main.h
+echo "int wildcmp(char *s1, char *s2);" >>main.h
+echo "int _putchar(char c);" >>main.h
+echo "" >>main.h
+echo "#endif" >>main.h
+echo "#include <stdlib.h>" >0-puts_recursion.c
+echo "#include <stdlib.h>" >1-print_rev_recursion.c
+echo "#include <stdlib.h>" >2-strlen_recursion.c
+echo "#include <stdlib.h>" >3-factorial.c
+echo "#include <stdlib.h>" >4-pow_recursion.c
+echo "#include <stdlib.h>" >5-sqrt_recursion.c
+echo "#include <stdlib.h>" >6-is_prime_number.c
+echo "#include <stdlib.h>" >100-is_palindrome.c
+echo "#include <stdlib.h>" >101-wildcmp.c
+echo "#include <stdlib.h>" >README.md
+chmod u+x 0-puts_recursion.c 1-print_rev_recursion.c 2-strlen_recursion.c 3-factorial.c 4-pow_recursion.c 
+chmod u+x 5-sqrt_recursion.c 6-is_prime_number.c 100-is_palindrome.c 101-wildcmp.c
