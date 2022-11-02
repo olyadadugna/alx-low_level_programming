@@ -4,8 +4,8 @@ int _sqrt(int, int);
 
 /**
  * _sqrt_recursion - sqrt using recursion
- * @n: parameter to be sqrt 
- * Return: number square root 
+ * @n: parameter to be sqrt
+ * Return: number square root
  */
 int _sqrt_recursion(int n)
 {
