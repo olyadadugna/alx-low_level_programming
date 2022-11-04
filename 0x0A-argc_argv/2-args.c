@@ -3,15 +3,15 @@
 
 /**
  * main - print the name of the program
- * * @argc: count argement
- * * @argv: argument
- * *
- * * Return: Always 0 (success)
+ * @argc: count argement
+ * @argv: argument
+ *
+ * Return: Always 0 (success)
  */
  
 int main(int argc, char *argv[])
 {
-	int cout = 0;
+	int count = 0;
 	
 	if (argc > 0)
 	{
