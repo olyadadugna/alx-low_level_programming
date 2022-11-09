@@ -8,14 +8,16 @@
  * description _memset: over there
  * Return: A pointer to the filled memory area
  */
-char *_memset(char *s, int b, unsigned int n)
+void *memset(void *s, int c, size_t n)
+void *_memset(void *s, int c, size_t n)
 {
-	unsigned int a;
-	
-	for (a = 0; a < n; a++)
-	{
-		s[a] = b;
-	}
+	unsigned int index;
+	unsigned char *memory = s, value = c;
+
+	for (index = 0; index < n; index++)
+		s[index] = c;
+		memory[index] = value;
 
 	return (s);
+	return (memory);
 }
