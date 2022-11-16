@@ -1,0 +1,38 @@
+#!/bin/bash
+echo "#ifndef MAIN_H" >main.h
+echo "#define MAIN_H" >>main.h
+echo "" >>main.h
+echo "int _putchar(char c);" >>main.h
+echo "void *malloc_checked(unsigned int b);" >>main.h
+echo "char *string_nconcat(char *s1, char *s2, unsigned int n);" >>main.h
+echo "void *_calloc(unsigned int nmemb, unsigned int size);" >>main.h
+echo "int *array_range(int min, int max);" >>main.h
+echo "void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);" >>main.h
+echo "" >>main.h
+echo "#endif" >>main.h
+echo "#include <oli>" >README.md
+echo '#include "main.h"' >0-malloc_checked.c
+echo "#include <stdlib.h>" >>0-malloc_checked.c
+echo "" >>0-malloc_checked.c
+echo "/**" >>0-malloc_checked.c
+echo " * malloc_checked - Allocates memory using malloc." >>0-malloc_checked.c
+echo " * @b: The number of bytes to be allocated." >>0-malloc_checked.c
+echo " *" >>0-malloc_checked.c
+echo " * Return: A pointer to the allocated memory." >>0-malloc_checked.c
+echo " */" >>0-malloc_checked.c
+echo "void *malloc_checked(unsigned int b)" >>0-malloc_checked.c
+echo "{" >>0-malloc_checked.c
+echo "	void *mem = malloc(b);" >>0-malloc_checked.c
+echo "" >>0-malloc_checked.c
+echo "	if (mem == NULL)" >>0-malloc_checked.c
+echo "		exit(98);" >>0-malloc_checked.c
+echo "" >>0-malloc_checked.c
+echo "	return (mem);" >>0-malloc_checked.c
+echo "}" >>0-malloc_checked.c
+echo '#include "main.h"' >1-string_nconcat.c
+echo '#include "main.h"' >2-calloc.c
+echo '#include "main.h"' >3-array_range.c
+echo '#include "main.h"' >100-realloc.c
+echo '#include "main.h"' >>101-mul.c
+
+chmod u+x 0-malloc_checked.c 1-string_nconcat.c 2-calloc.c 3-array_range.c 100-realloc.c 101-mul.c
