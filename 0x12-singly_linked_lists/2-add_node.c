@@ -11,7 +11,6 @@
  *         Otherwise - the address of the new element.
  */
 list_t *add_node(list_t **head, const char *str)
-int _strlen(const char *s)
 {
 	char *dup;
 	int len;
